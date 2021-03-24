@@ -1,1 +1,18 @@
 @import 'variables';
+
+//Song list
+.song-item {
+  height: 300px;
+}
+
+.title-song-box {
+  h5 {
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+}

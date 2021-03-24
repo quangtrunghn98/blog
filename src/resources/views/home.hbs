@@ -1,1 +1,21 @@
-<h1>Home Page</h1>
+<div class="mt-4">
+  <h2>My favorite list song</h2>
+
+  <div class="row">
+
+    {{#each songs}}
+    <div class="col-sm-6 col-md-3">
+      <div class="card mt-4 song-item">
+        <img src={{this.img}} class="card-img-top" alt={{this.name}}>
+        <div class="card-body">
+          <div class="title-song-box", style="height: 3em;">
+            <h5 class="card-title fs-6 text overflow-hidden">{{this.name}}</h5>
+          </div>
+          <p class="card-text overflow-hidden">{{this.auth}}</p>
+          <a href={{this.link}} class="btn btn-dark mx-auto" style="display: block; width: 100px;">Listen</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
